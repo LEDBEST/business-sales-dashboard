@@ -44,8 +44,3 @@ def plot_pie_chart(df, column, title):
     ax.pie(counts, labels=counts.index, autopct='%1.1f%%', startangle=90, colors=plt.cm.Paired.colors)
     ax.set_title(title, fontsize=12)
     st.pyplot(fig)
-
-def plot_kpi(kpi_metrics):
-    st.write("### KPI Metrics")
-    for metric, value in kpi_metrics.items():
-        st.metric(label=metric, value=round(value, 2))
