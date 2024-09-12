@@ -1,6 +1,6 @@
 from sklearn.linear_model import LinearRegression
-import numpy as np
 import pandas as pd
+import numpy as np
 
 def analyze_sales_by_region(df):
     return df.groupby(['Region', 'Product']).agg({'Sales': 'sum'}).reset_index()
