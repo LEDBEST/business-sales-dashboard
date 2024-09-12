@@ -1,0 +1,88 @@
+/* Общий фон страницы с градиентом */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f3f4f7, #ffffff);
+    color: #333;
+}
+
+h1 {
+    font-size: 2.2em;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+h3, .stMetric {
+    font-size: 1.4em;
+    color: #555;
+}
+
+/* Стиль для KPI карточек */
+.stMetric {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Добавление теней к графикам */
+.chart-container {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.chart-title {
+    font-size: 1.4em;
+    color: #555;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.watermark {
+    font-size: 1.2em;
+    color: gray;
+    text-align: center;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    h3, .stMetric {
+        font-size: 1.2em;
+    }
+
+    .chart-title {
+        font-size: 1.2em;
+    }
+
+    .stButton>button {
+        width: 100%;
+    }
+}
+
+.stApp {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer {
+    display: none;
+}
